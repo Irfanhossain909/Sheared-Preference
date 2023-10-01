@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background_color"
     android:padding="30dp"
     tools:context=".MainActivity">
 
@@ -11,9 +12,10 @@
         android:id="@+id/textInputLayout"
         android:layout_width="match_parent"
         android:layout_height="54dp"
-        android:layout_marginTop="72dp"
+        android:layout_marginTop="172dp"
+        app:hintTextColor="@color/black"
+        android:hint="Enter Your Name"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
@@ -21,7 +23,7 @@
             android:id="@+id/emailETxt"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:hint="Enter Your Name"
+            android:background="@drawable/edittext_color"
             android:inputType="textEmailAddress" />
 
 
@@ -31,7 +33,9 @@
         android:id="@+id/textInputLayout2"
         android:layout_width="match_parent"
         android:layout_height="54dp"
-        android:layout_marginTop="36dp"
+        android:layout_marginTop="32dp"
+        app:hintTextColor="@color/black"
+        android:hint="Enter Your password"
         app:layout_constraintEnd_toEndOf="@+id/textInputLayout"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/textInputLayout"
@@ -41,7 +45,7 @@
             android:id="@+id/passwordETxt"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:hint="Enter Your password"/>
+            android:background="@drawable/edittext_color" />
 
 
     </com.google.android.material.textfield.TextInputLayout>
@@ -51,7 +55,7 @@
         style="@style/Widget.Material3.Button.ElevatedButton.Icon"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="56dp"
+        android:layout_marginTop="84dp"
         android:text="SAVE"
         app:layout_constraintEnd_toEndOf="@+id/textInputLayout2"
         app:layout_constraintHorizontal_bias="0.496"
